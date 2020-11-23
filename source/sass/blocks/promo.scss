@@ -1,0 +1,30 @@
+.promo {
+  color: $white;
+  background-image: linear-gradient(rgba($green, 0.85) 302px, $white 302px),
+    url("../../img/promo-background.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  padding: 27px 20px 0 20px;
+}
+
+.promo__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.promo__slogan {
+  font-family: $oswald-font;
+  text-transform: uppercase;
+  margin: 25px 0 29px 0;
+}
+
+.promo__button {
+  margin-top: 3px;
+}

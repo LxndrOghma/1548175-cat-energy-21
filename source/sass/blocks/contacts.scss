@@ -1,0 +1,21 @@
+.contacts {
+  background-color: $white;
+}
+
+.contacts__wrapper {
+  padding: 28px 20px 22px 20px;
+}
+
+.contacts__invite {
+  font-family: $oswald-font;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: $black;
+  margin: 0;
+}
+
+.contacts__adress {
+  line-height: 20px;
+  margin: 0;
+}
