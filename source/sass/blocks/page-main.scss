@@ -6,6 +6,11 @@
   color: $black;
   margin: 0;
   padding: 27px 20px 37px 20px;
+
+  &--catalog {
+    padding-bottom: 41px;
+    border-bottom: 1px solid $lighter-grey;
+  }
 }
 
 .page-main__text {

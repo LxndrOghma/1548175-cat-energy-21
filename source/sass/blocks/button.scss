@@ -9,4 +9,12 @@
   line-height: 18px;
   border: none;
   color: $white;
+
+  &--show-more {
+    background-color: $basic-grey;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark-grey;
+  }
 }
