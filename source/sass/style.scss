@@ -3,6 +3,7 @@
 @import "global/page.scss";
 @import "global/visually-hidden.scss";
 @import "blocks/button.scss";
+@import "blocks/page-main.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
@@ -13,4 +14,10 @@
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
-@import "blocks/copyright.scss"
+@import "blocks/copyright.scss";
+@import "blocks/order-form.scss";
+@import "blocks/cat-parametres.scss";
+@import "blocks/cat-goals.scss";
+@import "blocks/owner-contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/additionally.scss";

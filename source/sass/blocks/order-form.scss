@@ -1,0 +1,40 @@
+.order-form {
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.order-form__field {
+  border: none;
+  margin: 0;
+  padding: 34px 20px 32px 20px;
+}
+
+.order-form__legend {
+  padding: 0;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.order-form__button-wrapper {
+  padding: 0 20px;
+}
+
+.order-form__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.order-form__note {
+  padding: 0 20px;
+  text-align: center;
+  text-transform: none;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}

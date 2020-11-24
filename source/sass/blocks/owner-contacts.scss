@@ -1,0 +1,30 @@
+.owner-contacts {
+  margin-top: 26px;
+}
+
+.owner-contacts__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--email {
+    margin-bottom: 14px;
+  }
+}
+
+.owner-contacts__label {
+  margin-right: 12px;
+}
+
+.owner-contacts__contact-input {
+  height: 45px;
+  flex-grow: 1;
+  border: 1px solid $input-grey;
+  font-family: $oswald-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-grey;
+  text-transform: uppercase;
+  padding-left: 16px;
+}
