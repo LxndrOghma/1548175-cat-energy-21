@@ -7,26 +7,30 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <img class="page-header__img" src="https://via.placeholder.com/34x38" alt="Маскот Cat Energy">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/101x18" alt="Логотип Cat Energy">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="">Подбор программы</a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo-wrapper">
+          <img class="page-header__img" src="https://via.placeholder.com/34x38" alt="Маскот Cat Energy">
+          <a class="page-header__logo">
+            <img src="https://via.placeholder.com/101x18" width="" alt="Логотип Cat Energy">
+          </a>
         </div>
-      </nav>
+        <nav class="main-nav">
+          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link" href="">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="page-main__label">Подбор программы</h1>
@@ -104,7 +108,7 @@
           <p class="order-form__note">* — Обязательные поля</p>
         </form>
       </div>
-      <section class="contacts">
+      <section class="contacts contacts--grey-theme">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
