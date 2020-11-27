@@ -7,7 +7,10 @@
 }
 
 .contacts__wrapper {
-  padding: 28px 20px 22px 20px;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__invite {
@@ -22,4 +25,16 @@
 .contacts__adress {
   line-height: 20px;
   margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    content: "";
+    width: 570px;
+    height: 201px;
+    left: 50%;
+    bottom: 400px;
+    transform: translateX(-610px);
+  }
 }

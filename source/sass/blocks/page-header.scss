@@ -1,5 +1,7 @@
 .page-header {
   background-color: $white;
+  height: 264px;
+  margin: 0 auto;
 }
 
 .page-header__wrapper {
@@ -9,4 +11,34 @@
 .page-header__logo-wrapper {
   padding: 12px 20px;
   border-bottom: 1px solid $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 78px;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $tablet-width-container;
+    padding: 24px 30px 0 30px;
+  }
+
+  .page-header__logo-wrapper {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 109px;
+  }
+
+  .page-header__wrapper {
+    max-width: $desktop-width-container;
+    padding: 69px 110px 0 110px;
+  }
 }

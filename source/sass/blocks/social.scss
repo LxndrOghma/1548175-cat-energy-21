@@ -2,3 +2,9 @@
   list-style: none;
   border-bottom: 1px solid $border-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border-bottom: none;
+  }
+}
