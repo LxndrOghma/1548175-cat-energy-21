@@ -1,5 +1,7 @@
+@import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "variables.scss";
+@import "global/container.scss";
 @import "global/page.scss";
 @import "global/visually-hidden.scss";
 @import "blocks/button.scss";
@@ -10,8 +12,10 @@
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
+@import "blocks/slider.scss";
 @import "blocks/slider-control.scss";
 @import "blocks/contacts.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
