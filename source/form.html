@@ -2,17 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo-wrapper">
-          <img class="page-header__img" src="https://via.placeholder.com/34x38" alt="Маскот Cat Energy">
-          <a class="page-header__logo">
+        <div class="page-header__logo-limiter">
+          <div class="page-header__logo-wrapper">
+            <img class="page-header__img" src="https://via.placeholder.com/34x38" alt="Маскот Cat Energy">
+            <a class="page-header__logo">
             <img src="https://via.placeholder.com/101x18" width="" alt="Логотип Cat Energy">
-          </a>
+            </a>
+          </div>
         </div>
         <nav class="main-nav">
           <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
@@ -33,86 +36,110 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__label">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="container">
+        <div class="page-main__header">
+          <h1 class="page-main__label">Подбор программы</h1>
+          <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
+      </div>
       <div class="page-main__form">
         <h2 class="visually-hidden">Форма подбора программы</h2>
         <form class="order-form" method="POST" action="https://echo.htmlacademy.ru">
-          <fieldset class="cat-parametres">
+          <div class="cat-data">
+            <fieldset class="cat-parametres">
               <legend class="visually-hidden">Имя и параметры кота</legend>
-              <div class="cat-parametres__input">
+              <div class="cat-parametres__wrapper">
+                <div class="cat-parametres__input">
                 <label class="cat-parametres__label" for="name">Имя:*</label>
                 <input class="cat-parametres__text-input"  id="name" type="text" placeholder="Барсик" name="name" required>
-              </div>
-              <div class="cat-parametres__input">
+                </div>
+                <div class="cat-parametres__input">
                 <label class="cat-parametres__label" for="weight">Вес (Кг):*</label>
                 <input class="cat-parametres__text-input"  id="weight" type="text" placeholder="7" name="weight" required>
-              </div>
-              <div class="cat-parametres__input">
+                </div>
+                <div class="cat-parametres__input">
                 <label class="cat-parametres__label" for="age">Возраст (лет):</label>
                 <input class="cat-parametres__text-input"  id="age" type="text" placeholder="7" name="age">
               </div>
-          </fieldset>
-          <fieldset class="cat-goals">
+            </div>
+            </fieldset>
+            <fieldset class="cat-goals">
             <legend class="visually-hidden">Цели кота</legend>
-            <div class="cat-goals__input">
+            <div class="cat-goals__wrapper">
+              <div class="cat-goals__input">
               <input class="cat-goals__radio-input" id="slim" type="radio" name="goals-radio" value="slim" checked>
               <label class="cat-goals__label" for="slim">Похудение</label>
-            </div>
-            <div class="cat-goals__input">
+              </div>
+              <div class="cat-goals__input">
               <input class="cat-goals__radio-input" id="pro" type="radio" name="goals-radio" value="pro">
               <label class="cat-goals__label" for="pro">Набор массы</label>
-            </div>
-            <div class="cat-goals__input">
+              </div>
+              <div class="cat-goals__input">
               <input class="cat-goals__radio-input" id="advice" type="radio" name="goals-radio" value="advice">
               <label class="cat-goals__label" for="advice">Не знаю (Нужен ваш совет)</label>
+              </div>
             </div>
-          </fieldset>
-          <fieldset class="order-form__field owner-contacts">
-            <legend class="order-form__legend">Контактные данные (владельца кота)</legend>
-            <div class="owner-contacts__input owner-contacts__input--email">
-              <label class="owner-contacts__label" for="email">E-mail:*</label>
-              <input class="owner-contacts__contact-input" id="email" type="email" placeholder="kuklachev@gmail.com" name="email">
-            </div>
-            <div class="owner-contacts__input owner-contacts__input--tel">
-              <label class="owner-contacts__label" for="phone">Телефон:*</label>
-              <input class="owner-contacts__contact-input" id="phone" type="tel" placeholder="8 (960) 900-60-90" name="phone">
-            </div>
-          </fieldset>
-          <fieldset class="order-form__field comment">
-            <legend class="order-form__legend">Комментарий</legend>
-            <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="order-form__field additionally">
-            <legend class="order-form__legend">Дополнительно</legend>
-              <div class="additionally__input">
+            </fieldset>
+          </div>
+          <div class="container">
+            <fieldset class="order-form__field owner-contacts">
+              <legend class="order-form__legend">Контактные данные (владельца кота)</legend>
+              <div class="owner-contacts__wrapper">
+                <div class="owner-contacts__input owner-contacts__input--email">
+                  <label class="owner-contacts__label" for="email">E-mail:*</label>
+                  <input class="owner-contacts__contact-input" id="email" type="email" placeholder="kuklachev@gmail.com" name="email">
+                </div>
+                <div class="owner-contacts__input owner-contacts__input--tel">
+                  <label class="owner-contacts__label" for="phone">Телефон:*</label>
+                  <input class="owner-contacts__contact-input" id="phone" type="tel" placeholder="8 (960) 900-60-90" name="phone">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="container">
+            <fieldset class="order-form__field comment">
+              <legend class="order-form__legend">Комментарий</legend>
+              <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+          </div>
+          <div class="container">
+            <fieldset class="order-form__field additionally">
+              <legend class="order-form__legend">Дополнительно</legend>
+              <div class="additionally__wrapper">
+                <div class="additionally__input">
                 <input class="additionally__checkbox-input" id="sugar-free" type="checkbox" name="additional" value="sugar-free" checked>
                 <label class="additionally__label" for="sugar-free">Сахарозаменитель</label>
-              </div>
-              <div class="additionally__input">
+                </div>
+                <div class="additionally__input">
                 <input class="additionally__checkbox-input" id="water" type="checkbox" name="additional" value="water">
                 <label class="additionally__label" for="water">Питьевая вода</label>
-              </div>
-              <div class="additionally__input">
+                </div>
+                <div class="additionally__input">
                 <input class="additionally__checkbox-input" id="milk" type="checkbox" name="additional" value="milk">
                 <label class="additionally__label" for="milk">Молоко</label>
-              </div>
-              <div class="additionally__input additionally__input--last">
+                </div>
+                <div class="additionally__input additionally__input--last">
                 <input class="additionally__checkbox-input" id="vitamins" type="checkbox" name="additional" value="vitamins">
                 <label class="additionally__label" for="vitamins">Витамины</label>
+                </div>
               </div>
-          </fieldset>
-          <div class="order-form__button-wrapper">
-            <button class="order-form__button button" type="submit">Отправить заявку</button>
+            </fieldset>
           </div>
-          <p class="order-form__note">* — Обязательные поля</p>
+          <div class="container">
+            <div class="order-form__footer">
+              <button class="order-form__button button" type="submit">Отправить заявку</button>
+              <p class="order-form__note">* — Обязательные поля</p>
+            </div>
+          </div>
         </form>
       </div>
       <section class="contacts contacts--grey-theme">
-        <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="container">
+          <div class="contacts__wrapper">
+            <h2 class="visually-hidden">Контакты</h2>
+            <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
         </div>
       </section>
       <section class="map">
