@@ -16,6 +16,14 @@
   margin: 0 auto;
   padding: 12px 20px;
   max-width: $mobile-width-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  transform: translateX(50%);
+  margin-right: 50%;
 }
 
 @media (min-width: $tablet-width) {
