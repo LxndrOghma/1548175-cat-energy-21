@@ -1,6 +1,11 @@
 .show-more {
-  padding: 26px 20px 5px 20px;
   text-align: center;
+}
+
+.show-more__wrapper {
+  margin: 0 auto;
+  max-width: $mobile-width-container;
+  padding: 25px 20px;
 }
 
 .show-more__title {
@@ -20,4 +25,12 @@
   line-height: 16px;
   margin: 0;
   margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more__wrapper {
+    padding: 8px 36px 40px 36px;
+    max-width: none;
+    border: 1px solid $basic-grey;
+  }
 }
