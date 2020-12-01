@@ -1,10 +1,20 @@
 .social {
-  list-style: none;
+  padding: 20px 0;
   border-bottom: 1px solid $border-grey;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     border-bottom: none;
+  }
+
+  .social__item {
+    &--vk {
+      margin-right: 27px;
+    }
+
+    &--instagram {
+      margin-right: 21px;
+    }
   }
 }

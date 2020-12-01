@@ -9,3 +9,17 @@
 .additionally__label {
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .additionally__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

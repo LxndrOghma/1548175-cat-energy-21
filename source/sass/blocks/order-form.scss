@@ -8,19 +8,15 @@
 .order-form__field {
   border: none;
   margin: 0;
-  padding: 34px 20px 32px 20px;
+  padding: 0;
 }
 
 .order-form__legend {
-  padding: 0;
+  margin-bottom: 35px;
   text-transform: none;
   font-size: 24px;
   line-height: 26px;
   color: $black;
-}
-
-.order-form__button-wrapper {
-  padding: 0 20px;
 }
 
 .order-form__button {
@@ -37,4 +33,37 @@
   font-size: 14px;
   line-height: 16px;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__field {
+    border: none;
+    margin: 0;
+    padding: 0 40px;
+  }
+
+  .order-form__footer {
+    padding: 0 40px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .order-form__button {
+    flex-basis: 45%;
+    margin-right: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__field {
+    padding: 0;
+  }
+
+  .order-form__footer {
+    padding: 0;
+  }
+
+  .order-form__button {
+    width: 568px;
+  }
 }

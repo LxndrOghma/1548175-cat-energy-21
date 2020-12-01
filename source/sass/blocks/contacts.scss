@@ -27,6 +27,13 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts {
     position: absolute;
@@ -34,7 +41,15 @@
     width: 570px;
     height: 201px;
     left: 50%;
-    bottom: 400px;
+    bottom: 280px;
     transform: translateX(-610px);
+
+    .contacts__wrapper {
+      padding: 0;
+    }
+
+    &--grey-theme {
+      background-color: $white;
+    }
   }
 }

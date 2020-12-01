@@ -12,12 +12,24 @@
   border-bottom: 1px solid $border-grey;
 }
 
+.page-footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .page-footer__socials {
-  padding: 20px 0;
-  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 73px;
+  align-items: center;
 }
 
 .page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 22px;
 }
 
@@ -30,9 +42,10 @@
 
   .page-footer__logo-wrapper {
     border: none;
+    padding: 0;
   }
 
-  .page-footer__socials {
-    display: flex;
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }
