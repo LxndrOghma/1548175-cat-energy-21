@@ -1,5 +1,6 @@
 .gift {
-  padding: 39px 20px 35px 20px;
+  padding-top: 39px;
+  padding-bottom: 35px;
 }
 
 .gift__wrapper {
@@ -14,4 +15,12 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
