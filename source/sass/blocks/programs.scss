@@ -1,78 +1,202 @@
-.programs__wrapper {
-  margin-top: 22px;
-}
-
 .programs__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 27px;
 }
 
 .programs__item {
   background-color: $basic-grey;
-  padding: 30px 20px 22px 20px;
+  padding: 30px 20px 20px 20px;
 
   &--slim {
     margin-bottom: 20px;
+
+    .programs__title::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 53px;
+      left: 2px;
+      top: -9px;
+      background-image: url("../../img/cat-back.svg");
+    }
+  }
+
+  &--pro {
+    .programs__title::before {
+      position: absolute;
+      content: "";
+      width: 67px;
+      height: 50px;
+      left: -7px;
+      top: -6px;
+      background-image: url("../../img/cat-back-pro.svg");
+    }
   }
 }
 
+
 .programs__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   color: black;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
   margin: 0;
-  margin-left: 71px;
+  margin-bottom: 29px;
+  padding-left: 71px;
 }
 
 .programs__text {
+  line-height: 18px;
   margin: 0;
-  margin-top: 29px;
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $border-grey;
   margin-bottom: 20px;
 }
 
 .programs__link {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  padding-right: 39px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 12px;
+    right: 0;
+    top: 5px;
+    background-image: url("../../img/link-arrow.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .programs__wrapper {
-    margin: 0;
-    height: 1446px;
+    margin-bottom: 45px;
   }
 
   .programs__item {
-    height: 656px;
+    position: relative;
+    padding: 77px 315px 56px 53px;
 
     &--slim {
+      padding-right: 272px;
       margin-bottom: 30px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 211px;
+        right: 62px;
+        top: 81px;
+        background-image: url("/img/cat-back-tablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--pro {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 268px;
+        height: 200px;
+        right: 28px;
+        top: 91px;
+        background-image: url("/img/cat-back-pro-tablet.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin-bottom: 25px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .programs__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 52px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 48px;
+
+    &::after {
+      top: 8px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs__wrapper {
-    height: 456px;
+    margin-bottom: 71px;
   }
 
   .programs__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(374px, auto);
+    column-gap: 80px;
+    margin-bottom: 0;
   }
 
   .programs__item {
-    height: 319px;
-    flex-basis: 0;
-    flex-grow: 1;
+    padding: 77px 51px 58px 52px;
 
     &--slim {
       margin-bottom: 0;
-      margin-right: 80px;
+
+      &::before {
+        width: 100px;
+        height: 106px;
+        left: 52px;
+        top: 41px;
+        background-image: url("/img/cat-back-desktop.svg");
+      }
     }
+
+    &--pro::before {
+      width: 134px;
+      height: 100px;
+      left: 33px;
+      top: 47px;
+      background-image: url("/img/cat-back-pro-desktop.svg");
+    }
+  }
+
+  .programs__title {
+    padding-left: 162px;
+    margin-bottom: 74px;
+  }
+
+  .programs__text {
+    margin-bottom: 27px;
+  }
+
+  .programs__link {
+    padding-right: 53px;
   }
 }

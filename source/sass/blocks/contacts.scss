@@ -8,9 +8,10 @@
 
 .contacts__wrapper {
   padding-top: 28px;
-  padding-bottom: 22px;
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .contacts__invite {
@@ -27,10 +28,28 @@
   margin: 0;
 }
 
+.contacts__brake {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 63px 41px 58px 41px;
+    column-gap: 295px;
+  }
+
+  .contacts__invite {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contacts__adress {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__brake {
+    display: inline;
   }
 }
 
@@ -41,15 +60,32 @@
     width: 570px;
     height: 201px;
     left: 50%;
-    bottom: 280px;
+    bottom: 252px;
     transform: translateX(-610px);
+    display: flex;
+    align-items: center;
 
-    .contacts__wrapper {
+    .container {
+      max-width: auto;
       padding: 0;
     }
 
     &--grey-theme {
       background-color: $white;
     }
+  }
+
+  .contacts__wrapper {
+    padding: 0 80px 0 76px;
+    column-gap: 87px;
+    padding-top: 5px;
+  }
+
+  .contacts__invite {
+    line-height: 25px;
+  }
+
+  .contacts__adress {
+    text-align: left;
   }
 }
