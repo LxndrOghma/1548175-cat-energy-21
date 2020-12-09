@@ -3,3 +3,9 @@
   line-height: 18px;
   color: $dark-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 24px;
+  }
+}

@@ -1,6 +1,5 @@
 .page-header {
   background-color: $white;
-  height: 264px;
   margin: 0 auto;
 }
 
@@ -13,22 +12,66 @@
 }
 
 .page-header__logo-wrapper {
+  position: relative;
   margin: 0 auto;
-  padding: 12px 20px;
+  padding: 12px 20px 13px 20px;
   max-width: $mobile-width-container;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.page-header__logo {
-  transform: translateX(50%);
-  margin-right: 50%;
+.page-header__toggle {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 65px;
+  height: 64px;
+  border: none;
+  background-color: $white;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.page-header__logo-wrapper--nav-closed .page-header__toggle {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    left: 21px;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+    z-index: 2;
+  }
+}
+
+.page-header__logo-wrapper--nav-opened .page-header__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: 20px;
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    height: 78px;
+  .page-header__logo-limiter {
+    border-bottom: none;
   }
 
   .page-header__wrapper {
@@ -37,25 +80,42 @@
     align-items: center;
     max-width: $tablet-width-container;
     padding: 24px 30px 0 30px;
-  }
-
-  .page-header__logo-limiter {
-    border-bottom: none;
+    margin: 0 auto;
   }
 
   .page-header__logo-wrapper {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    max-width: auto;
+    display: block;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    height: 109px;
+    position: relative;
+    background-color: transparent;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 694px;
+      right: 0;
+      top: 0;
+      background-image: linear-gradient(rgba($green, 0.85), rgba($green, 0.85)), url("/img/index-background-desktop.jpg");
+      z-index: -1;
+    }
   }
 
   .page-header__wrapper {
     max-width: $desktop-width-container;
-    padding: 69px 110px 0 110px;
+    padding: 53px 110px 0 110px;
+    z-index: 2;
+    margin-bottom: 27px;
   }
 }
