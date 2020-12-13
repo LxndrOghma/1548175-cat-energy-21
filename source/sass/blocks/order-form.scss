@@ -11,22 +11,48 @@
   padding: 0;
 }
 
-.order-form__legend {
+.order-form__legend-wrapper {
+  position: relative;
+  display: flex;
   margin-bottom: 35px;
+  align-items: center;
+}
+
+.order-form__legend {
+  margin: 0;
   text-transform: none;
   font-size: 24px;
   line-height: 26px;
   color: $black;
+  max-width: 202px;
+  padding-right: 21px;
+  background-color: $white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+    top: 16px;
+    right: -20px;
+    z-index: -1;
+  }
+}
+
+.order-form__footer {
+  margin-bottom: 32px;
 }
 
 .order-form__button {
   width: 100%;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 21px;
 }
 
 .order-form__note {
-  padding: 0 20px;
+  margin: 0;
   text-align: center;
   text-transform: none;
   font-family: "Arial", "Helvetica", sans-serif;
@@ -36,34 +62,86 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order-form__legend-wrapper {
+    margin-bottom: 76px;
+  }
+
+  .order-form__legend {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: none;
+    padding-right: 41px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 5%;
+      height: 2px;
+      background-color: $green;
+      top: 22px;
+      left: -70px;
+      z-index: -1;
+    }
+
+    &::after {
+      top: 22px;
+      right: -70px;
+    }
+  }
+
   .order-form__field {
     border: none;
     margin: 0;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 35px;
   }
 
   .order-form__footer {
-    padding: 0 40px;
+    padding: 0 42px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 72px;
   }
 
   .order-form__button {
     flex-basis: 45%;
     margin-right: 61px;
+    font-size: 20px;
+    height: 52px;
+    margin-bottom: 0;
+  }
+
+  .order-form__note {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .order-form__legend {
+    &::before {
+      left: -110px;
+      width: 6%;
+    }
+
+    &::after {
+      right: -110px;
+    }
+  }
+
   .order-form__field {
     padding: 0;
   }
 
   .order-form__footer {
     padding: 0;
+    margin-bottom: 82px;
   }
 
   .order-form__button {
-    width: 568px;
+    flex-basis: auto;
+    width: 569px;
+    margin-right: 82px;
   }
 }
