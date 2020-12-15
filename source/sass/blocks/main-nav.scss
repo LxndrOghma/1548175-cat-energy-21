@@ -89,13 +89,16 @@
     margin-top: 3px;
   }
 
-  .main-nav__link {
+  .main-nav__link--white {
     color: $white;
   }
 
   .main-nav__item--active .main-nav__link {
     &::before {
       top: 35px;
+    }
+
+    &--white::before {
       background-color: $white;
     }
   }

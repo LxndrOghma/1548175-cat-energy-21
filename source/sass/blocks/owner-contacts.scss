@@ -1,8 +1,10 @@
 .owner-contacts {
-  margin-top: 26px;
+  padding-top: 26px;
+  margin-bottom: 23px;
 }
 
 .owner-contacts__input {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,11 +16,16 @@
 }
 
 .owner-contacts__label {
-  margin-right: 12px;
+  margin-right: 11px;
+  padding-bottom: 5px;
+
+  &--tel {
+    margin-right: 9px;
+  }
 }
 
 .owner-contacts__contact-input {
-  height: 45px;
+  height: 41px;
   flex-grow: 1;
   border: 1px solid $input-grey;
   font-family: $oswald-font;
@@ -27,10 +34,75 @@
   line-height: 18px;
   color: $dark-grey;
   text-transform: uppercase;
-  padding-left: 16px;
+  padding-left: 14px;
+  padding-right: 35px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.owner-contacts__icon {
+  position: absolute;
+  z-index: 1;
+
+  &--email {
+    right: 15px;
+    top: 16px;
+  }
+
+  &--tel {
+    right: 13px;
+    top: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .owner-contacts {
+    padding-top: 0;
+    margin-bottom: 65px;
+  }
+
+  .owner-contacts__input {
+    &--email {
+      margin-bottom: 20px;
+    }
+  }
+
+  .owner-contacts__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+    padding-bottom: 0;
+
+    &--tel {
+      margin-right: 14px;
+    }
+  }
+
+  .owner-contacts__contact-input {
+    height: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 19px;
+  }
+
+  .owner-contacts__icon {
+    &--email {
+      right: 18px;
+      top: 18px;
+    }
+
+    &--tel {
+      right: 18px;
+      top: 16px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .owner-contacts {
+    margin-bottom: 67px;
+  }
+
   .owner-contacts__wrapper {
     display: flex;
     align-items: center;
