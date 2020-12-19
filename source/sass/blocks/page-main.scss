@@ -13,8 +13,7 @@
   margin-bottom: 37px;
 
   &--catalog {
-    padding-bottom: 41px;
-    border-bottom: 1px solid $lighter-grey;
+    margin-bottom: 40px;
   }
 }
 
@@ -33,11 +32,18 @@
     padding-right: 200px;
   }
 
-  .page-main__label--form {
-    font-size: 60px;
-    line-height: 60px;
-    padding-top: 63px;
-    margin-bottom: 55px;
+  .page-main__label {
+    &--form,
+    &--catalog {
+      font-size: 60px;
+      line-height: 60px;
+      padding-top: 63px;
+      margin-bottom: 55px;
+    }
+
+    &--catalog {
+      margin-bottom: 83px;
+    }
   }
 
   .page-main__text {
@@ -52,8 +58,15 @@
     padding: 0;
   }
 
-  .page-main__label--form {
-    padding-top: 46px;
+  .page-main__label {
+    &--form,
+    &--catalog {
+      padding-top: 46px;
+    }
+
+    &--catalog {
+      margin-bottom: 85px;
+    }
   }
 
   .page-main__text {
