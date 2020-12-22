@@ -90,6 +90,11 @@
     display: block;
   }
 
+  .page-header__logo-img {
+    width: 174px;
+    height: 52px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -117,5 +122,10 @@
     padding: 53px 110px 0 110px;
     z-index: 2;
     margin-bottom: 27px;
+  }
+
+  .page-header__logo-img {
+    width: 202px;
+    height: 59px;
   }
 }
