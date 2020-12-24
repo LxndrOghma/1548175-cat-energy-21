@@ -6,6 +6,11 @@
 .gift__wrapper {
   background-image: url("../img/gift-photo-mobile.jpg");
   background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 100%;
+  }
 }
 
 .gift__text {
@@ -38,6 +43,11 @@
     padding: 0;
     background-image: url("../img/gift-photo-tablet.jpg");
     margin-bottom: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 100%;
+    }
   }
 
   .gift__text {
@@ -59,6 +69,11 @@
   .gift__wrapper {
     margin: 0;
     background-image: url("../img/gift-photo-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 100%;
+    }
   }
 
   .gift__text {
