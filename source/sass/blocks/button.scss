@@ -11,6 +11,15 @@
   color: $white;
   padding: 0;
 
+  &:hover {
+    background-color: $button-green;
+  }
+
+  &:active {
+    background-color: $button-green;
+    color: transparentize($white, 0.3);
+  }
+
   &--show-more {
     background-color: $basic-grey;
     height: 40px;

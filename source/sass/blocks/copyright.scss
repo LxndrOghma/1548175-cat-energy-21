@@ -1,7 +1,25 @@
+.copyright {
+  &:hover .copyright__svg {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__svg {
+      fill: $green;
+    }
+  }
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey;
+}
+
+.copyright__svg {
+  fill: $social-grey;
 }
 
 @media (min-width: $tablet-width) {
