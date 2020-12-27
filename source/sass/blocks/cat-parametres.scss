@@ -46,6 +46,19 @@
   color: $dark-grey;
   text-transform: uppercase;
   padding-left: 16px;
+
+  &:hover {
+    border-color: $border-grey;
+  }
+
+  &:focus {
+    border: 2px solid $dark-grey;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid $error-red;
+  }
 }
 
 @media (min-width: $tablet-width) {

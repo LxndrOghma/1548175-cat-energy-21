@@ -27,6 +27,10 @@
     top: -2px;
     border: 1px solid $border-grey;
   }
+
+  &:hover::before {
+    border: 1px solid $hover-grey;
+  }
 }
 
 .additionally__checkbox-input:checked + .additionally__label::after {
@@ -37,6 +41,10 @@
   top: 5px;
   left: 6px;
   background-image: url("../img/icon-checked.svg");
+}
+
+.additionally__checkbox-input:disabled + .additionally__label {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
