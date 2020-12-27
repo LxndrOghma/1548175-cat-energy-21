@@ -26,5 +26,14 @@
     font-size: 16px;
     line-height: 20px;
     color: $dark-grey;
+
+    &:hover {
+      background-color: $lighter-grey;
+    }
+
+    &:active {
+      background-color: $lighter-grey;
+      color: transparentize($dark-grey, 0.3);
+    }
   }
 }
