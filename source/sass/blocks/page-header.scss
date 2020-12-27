@@ -21,6 +21,16 @@
   justify-content: space-between;
 }
 
+.page-header__logo-img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__toggle {
   position: absolute;
   display: block;

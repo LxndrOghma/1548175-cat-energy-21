@@ -76,6 +76,34 @@
     top: 5px;
     background-image: url("../img/link-arrow.svg");
   }
+
+  &:hover {
+    padding-right: 47px;
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 12px;
+    right: 0;
+    top: 5px;
+    background-image: url("../img/link-arrow-long.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 12px;
+    right: 0;
+    top: 5px;
+    background-image: url("../img/link-arrow-long.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -98,7 +126,7 @@
         height: 211px;
         right: 62px;
         top: 81px;
-        background-image: url("../img/cat-back-tablet.png");
+        background-image: url("../img/cat-back-tablet.svg");
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -145,6 +173,16 @@
     padding-right: 48px;
 
     &::after {
+      top: 8px;
+    }
+
+    &:hover,
+    &:active {
+      padding-right: 56px;
+    }
+
+    &:hover::after,
+    &:active::after {
       top: 8px;
     }
   }
@@ -198,5 +236,10 @@
 
   .programs__link {
     padding-right: 53px;
+
+    &:hover,
+    &:active {
+      padding-right: 61px;
+    }
   }
 }
