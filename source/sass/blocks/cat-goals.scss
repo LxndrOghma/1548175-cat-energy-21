@@ -28,9 +28,17 @@
   border-radius: 50%;
 }
 
+.cat-goals__radio-input:disabled + .cat-goals__label {
+  opacity: 0.3;
+}
+
 .cat-goals__label {
   position: relative;
   padding-left: 45px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   &::before {
     position: absolute;
@@ -42,6 +50,10 @@
     box-sizing: border-box;
     border: 1px solid $border-grey;
     border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 1px solid $hover-grey;
   }
 }
 

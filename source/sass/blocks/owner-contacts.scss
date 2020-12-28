@@ -38,11 +38,21 @@
   padding-right: 35px;
   z-index: 2;
   background-color: transparent;
+
+  &:disabled {
+    border: 2px solid $dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $error-red;
+  }
 }
+
 
 .owner-contacts__icon {
   position: absolute;
   z-index: 1;
+  fill: $darker-grey;
 
   &--email {
     right: 15px;
@@ -54,6 +64,15 @@
     top: 13px;
   }
 }
+
+.owner-contacts__contact-input:disabled + .owner-contacts__icon {
+  fill: $green;
+}
+
+.owner-contacts__contact-input:invalid + .owner-contacts__icon {
+  fill: $error-red;
+}
+
 
 @media (min-width: $tablet-width) {
   .owner-contacts {
@@ -112,6 +131,17 @@
     &--email {
       margin-bottom: 0;
       margin-right: 78px;
+    }
+  }
+
+  .owner-contacts__icon {
+    &--email {
+      right: 20px;
+    }
+
+    &--tel {
+      right: 17px;
+      top: 15px;
     }
   }
 }
