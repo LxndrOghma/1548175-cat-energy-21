@@ -1,6 +1,6 @@
 let navMain = document.querySelector('.main-nav');
 let headerToggle = document.querySelector('.page-header__toggle');
-let headerNav = document.querySelector('.page-header__logo-wrapper')
+let headerNav = document.querySelector('.page-header__logo-wrapper');
 
 navMain.classList.remove('main-nav--nojs');
 
