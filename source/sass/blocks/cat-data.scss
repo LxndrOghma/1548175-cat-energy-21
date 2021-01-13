@@ -1,6 +1,15 @@
-@media (min-width: $desktop-width) {
+.cat-data {
+  margin-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
   .cat-data {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data {
     padding: 0 110px;
     max-width: $desktop-width-container;
     display: flex;
